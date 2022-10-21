@@ -88,7 +88,7 @@ function drawNest() {
 function get_random_int(min, max) {
     return Math.floor((Math.random() * (max - min + 1))) + min;
 }
-//Para que las hormigas no escapen?
+//Para que las hormigas no escapen
 function get_bounded_index(index) {
     var bounded_index = index;
     if (index < 0) {
