@@ -1,10 +1,8 @@
-import Canvas from "./Canvas.js";
+import Cell from "./Cell.js";
 
-export default class Nest extends Canvas {
+export default class Nest extends Cell {
     constructor() {
         super();
-        this.i = 0;
-        this.ii = 0;
         this.width = 70;
         this.height = 70;
         this.x = (super.getWidth / 2) - (this.width / 2);
@@ -28,6 +26,10 @@ export default class Nest extends Canvas {
                 }
             }
         }
+    }
+
+    calcDistance(i, ii) {
+        return super.calcDistance(i, ii, this.i - 10, this.ii - 10);
     }
 
     style() {
