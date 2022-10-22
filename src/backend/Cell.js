@@ -11,7 +11,7 @@ export default class Cell extends Canvas {
         this.signal = 0;
     }
 
-    get hasAnt() {
+    hasAnt() {
         return !!this.ant;
     }
 }
